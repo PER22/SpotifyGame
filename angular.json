@@ -65,7 +65,7 @@
           "configurations": {
             "production": { 
               "browserTarget": "angular-whos-who:build:production"
-            },
+            }, 
             "development": {
               "browserTarget": "angular-whos-who:build:development"
             }
