@@ -1,0 +1,17 @@
+<div class="container">
+    <div>
+        <h1>Name:</h1>
+        <form class="form-box" [formGroup]="entryForm" (ngSubmit)="onClick()">
+            <label for="name">Name: (First & Last)</label>
+            <input type="text" for="name" class="input-style" formControlName="name"/>
+            <ng-container *ngIf="entryForm.controls['name'].touched && entryForm.controls['name'].errors">
+                <div *ngIf="entryForm.controls['name'].errors['required']" class="error">Name is required</div>
+                <div *ngIf="entryForm.controls['name'].errors['minlenth']" class="error">The name you provided is
+                    {{entryForm.controls['name'].errors['minlenth'].actualLength}} chacter(S) but it must be 
+                    {{entryForm.controls['name'].errors['minlenth'].requiredLength}}chacters</div>
+            </ng-container>
+            <button type="submit">Submit Entry</button>
+        </form>
+    </div>
+  
+</div>

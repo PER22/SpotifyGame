@@ -1,0 +1,26 @@
+<div class="container">
+    <div>
+        <h1>LeaderBoard</h1>
+        <table class="">
+            <tr *ngIf=" players.length">
+                <!-- <th>Rank</th> -->
+                <th>Name</th>
+                <th>Score</th>
+                <th>Elapsed Time</th>
+                <th>Date</th>
+            </tr>
+            <tr *ngFor="let key of players; let even = even" [class.option1]="even" [class.option2]="!even">
+                <!-- <td>{{key.rank}}</td> -->
+                <td>{{key.name}}</td>
+                <td>{{key.score}}</td>
+                <td>{{key.time}} sec</td>
+                <td>{{key.date}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="button-container">
+        <button (click)="navigateToPlay()">Play Again</button>
+        <button (click)="navigateToHome()">Quit</button>
+    </div>
+
+</div>

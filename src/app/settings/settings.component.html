@@ -1,0 +1,70 @@
+<div class="settings-container">
+    <form class="form-box" (ngSubmit)="submitSettings()">
+        <!-- Difficulty Section -->
+        <div>
+            <h2>Game Settings</h2>
+            <fieldset class="difficulty-div">
+
+                <legend>Difficulty</legend>
+                <div class="option">
+                    <input type='radio' name="difficulty" value="easy" [(ngModel)]="settings.difficulty"
+                        class="input-style" />
+
+                    <label>Easy</label><br>
+                </div>
+                <div class="option">
+                    <input type='radio' name="difficulty" value="medium" [(ngModel)]="settings.difficulty"
+                        class="input-style" />
+
+                    <label>Medium</label><br>
+                </div>
+                <div class="option">
+                    <input type='radio' name="difficulty" value="hard" [(ngModel)]="settings.difficulty"
+                        class="input-style" />
+                    <label>Hard</label><br>
+                </div>
+
+            </fieldset>
+        </div>
+        <!-- Genre Section -->
+        <fieldset class="genre-div">
+            <legend>Genre</legend>
+            <div class="option">
+                <input type="radio" name="genre" id="rock-radio" value="rock" [(ngModel)]="settings.genre">
+                <label for="rock-radio">Rock</label><br>
+            </div>
+            <div class="option">
+                <input type="radio" name="genre" id="rap-radio" value="rap" [(ngModel)]="settings.genre">
+                <label for="rap-radio">Rap</label><br>
+            </div>
+            <div class="option">
+                <input type="radio" name="genre" id="pop-radio" value="pop" [(ngModel)]="settings.genre">
+                <label for="pop-radio">Pop</label><br>
+            </div>
+            <div class="option">
+                <input type="radio" name="genre" id="country-radio" value="country" [(ngModel)]="settings.genre">
+                <label for="country-radio">Country</label><br>
+            </div>
+            <div class="option">
+                <input type="radio" name="genre" id="electronic-radio" value="electronic" [(ngModel)]="settings.genre">
+                <label for="electronic-radio">Electronic</label><br>
+            </div>
+            <div class="option">
+                <input type="radio" name="genre" id="jazz-radio" value="jazz" [(ngModel)]="settings.genre">
+                <label for="jazz-radio">Jazz</label><br>
+            </div>
+            <div class="option">
+                <input type="radio" name="genre" id="classical-radio" value="classical" [(ngModel)]="settings.genre">
+                <label for="classical-radio">Classical</label><br>
+            </div>
+        </fieldset>
+        <!-- Number of Songs Section -->
+        <fieldset class="number-of-songs-container">
+            <legend>Songs</legend>
+            <input class="number-of-songs-input" type="text" name="number-of-songs" id="number-of-songs"
+                [(ngModel)]="settings.numberOfSongs" class="input-style">
+        </fieldset>
+        <!-- Submit Button -->
+        <button class="submit-button" type="submit">Submit Entry</button>
+    </form>
+</div>

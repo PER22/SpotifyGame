@@ -1,0 +1,59 @@
+html {
+  min-height: 100%;
+}
+body {
+  background: radial-gradient(circle, rgba(40,40,40,.6), rgba(5,5,5,.6)),
+              linear-gradient(to bottom, rgba(40,40,40,1), rgba(2,2,2,1));
+              min-height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+}
+
+.green-button {
+  width: 8 rem;
+  height: 3rem;
+  color: black;
+  background-color: rgb(202, 231, 158);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 1.25em;
+  font-family: "Patrick Hand SC", cursive;
+}
+.green-button:hover {
+  cursor: pointer;
+}
+
+.quit-button {
+  width: 50%;
+  height: 50px;
+  color: black;
+  background-color: rgb(202, 50, 50);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 1.25em;
+  font-family: "Patrick Hand SC", cursive;
+}
+.quit-button:hover {
+  cursor: pointer;
+}
+.input-style {
+  height: 40px;
+  border: 2px solid #fff1aa;
+  border-radius: 3px;
+  text-align: center;
+  color: #aacde9;
+  font-size: medium;
+}
+.error {
+  color: palevioletred;
+  font-size: 1.5em;
+  width: 100% !important;
+}
+
+

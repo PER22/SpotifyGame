@@ -1,0 +1,29 @@
+<div id="gameplay-container">
+    <div id="game-stats">
+        <div class="current-score">Score: {{ currentScore }}</div>
+        <div *ngIf="timeRemaining != infinity" class="time-remaining">Remaining: {{floor(timeRemaining / 60)}}:{{ floor(timeRemaining % 60)}}</div>
+        <div class="elapsed-time">Elapsed: {{floor(elapsedTime / 60)}}:{{ floor(elapsedTime % 60) < 10 ? "0" : ""}}{{ floor(elapsedTime % 60)}}</div>
+    </div>
+
+    <div id="playback-container">
+        <button class="play-button" (click)="playSong()"><img src="../../assets/play-button-svgrepo-com.svg"></button>
+        <button class="pause-button" (click)="pauseSong()"><img src="../../assets/pause-svgrepo-com.svg"></button>
+    </div>
+
+    <div *ngIf="quiz" id="answers-container">
+        <button *ngFor="let option of quiz[this.currentQuestionNumber].options; let i = index" (click)="answer(option.title)"
+            [id]="'option-' + (i + 1)" class="answer-button">
+            {{ option.title }} <br> {{ option.artist }}
+        </button>
+    </div>
+</div>
+
+<div *ngIf="displayModal" class="modal">
+    <div class="modal-content">
+        <span> {{winOrLoss === true ? 'You Won!' : 'You Lost'}} </span>
+
+        <button (click)="playAgain()">Play Again</button>
+        <button (click)="changeSettings()">Update Settings</button>
+        <button (click)="goToLeaderBoard()">Go to Leaderboard</button>
+      </div>
+</div>

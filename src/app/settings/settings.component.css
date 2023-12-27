@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80rem;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color:rgba(11, 89, 11, 0.11);
+    font-size: 1.5em;
+    color: #FFF1AA;
+    border-radius: 10px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+    margin-bottom: 1rem;
+  }
+
+
+
+.difficulty-div  div{
+    margin-bottom: 1rem; 
+}
+
+legend { color: white;}
+
+
+
+
+.option {
+    margin: 1rem;
+    display: flex;
+    flex-direction:row;    
+}
+
+
+
+h1 {
+    text-align: center;
+}
+.disabled {
+    background-color: #555;
+    color: #fff;
+    cursor:default;
+}
+
+
+.number-of-songs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.submit-button {
+    margin: 1rem auto;
+}
+

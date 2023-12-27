@@ -1,0 +1,9 @@
+<div class="home-container">
+  <p class="instructions-paragraph">To play this game, you select a genre, difficulty, and number of questions. For each question, you will hear a clip of the song. Select the song's  information from the four options. Have fun and thanks for playing.</p>
+  <div *ngIf="authLoading || configLoading">Loading...</div>
+  <div *ngIf="!authLoading && !configLoading" id="link-container">
+    <app-nav-button link="/play" content="Play" id="play-link" class="nav-button"></app-nav-button>
+    <app-nav-button link="/leaderboard" content="Leaderboard" id="leaderboard-link" class="nav-button"></app-nav-button>
+    <app-nav-button link="/settings" content="Settings" id="settings-link" class="nav-button"></app-nav-button>
+  </div>
+</div>
