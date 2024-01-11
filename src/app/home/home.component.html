@@ -1,5 +1,9 @@
 <div class="home-container">
-  <p class="instructions-paragraph">To play this game, you select a genre, difficulty, and number of questions. For each question, you will hear a clip of the song. Select the song's  information from the four options. Have fun and thanks for playing.</p>
+  <ol class="instructions-paragraph">
+    <li>Select a genre, difficulty, and number of questions.</li>
+    <li>For each question, you will hear a clip of the song.</li>
+    <li>Select the song's information from the four options.</li>
+  </ol>
   <div *ngIf="authLoading || configLoading">Loading...</div>
   <div *ngIf="!authLoading && !configLoading" id="link-container">
     <app-nav-button link="/play" content="Play" id="play-link" class="nav-button"></app-nav-button>

@@ -2,7 +2,7 @@ html {
   min-height: 100%;
 }
 body {
-  background: radial-gradient(circle, rgba(40,40,40,.6), rgba(5,5,5,.6)),
+  background: radial-gradient(circle, rgba(60,60,60,.6), rgba(5,5,5,.6)),
               linear-gradient(to bottom, rgba(40,40,40,1), rgba(2,2,2,1));
               min-height: 100%;
               display: flex;

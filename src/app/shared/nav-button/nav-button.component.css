@@ -1,5 +1,6 @@
 
 .nav-link, .nav-link:visited {
     text-decoration: none; /* no underline */
-    color: white;
+    color: #0AFF00;
+    filter: drop-shadow(#0AFF00 0px 0px 5px);
 }

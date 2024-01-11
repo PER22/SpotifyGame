@@ -16,8 +16,9 @@
 }
 
 .instructions-paragraph {
-  color: white; 
-  font-size: 24px;
+  color: #0AFF00; 
+  font-size: 1rem;
+  filter: drop-shadow(#0AFF00 1px 1px 2px);
 }
 
 .nav-button {
@@ -28,7 +29,7 @@
     text-align: center;
     cursor: pointer; 
     background-image: linear-gradient(to bottom, #757575, #141010);
-    filter: drop-shadow(green 1px 1px 2px);
+    filter: drop-shadow(#0AFF00 1px 1px 2px);
 }
 
 
